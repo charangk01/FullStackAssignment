@@ -18,23 +18,36 @@ git clone https://github.com/charangk01/FullStackAssignment.git
 2. Setup Golang Environment
 3. Run the Backend Server
 ```
-go run main.go
+Local ENV : go run main.go
+```
+```
+Using Docker:
+docker build -t golang-lru-cache .
+docker run -p 8080:8080 golang-lru-cache
 ```
 
 ## Frontend (ReactJs)
 
 1. Navigate to the Frontend directory
 2. Setup the Environment
-3. Install the dependenies
+3. Install the dependenies & Start the server
 ```
+Local ENV :
 npm install
-```
-
-4. Start the server
-
-```
 npm start
 ```
+```
+Using Docker :
+docker build -t react-lru-cache .
+docker run -p 3000:80 react-lru-cache
+```
+
+## Using Docker Compose
+
+```
+docker-compose up --build
+```
+
 ## Contributing
 
 1. Fork it
